@@ -13,9 +13,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Material App',
         initialRoute: AppRoutes.initialRoute,
-        routes: AppRoutes.routes,
-	onGenerateRoute: AppRoutes.onGenerateRoute // Le manda el argumento en automático
-	},
+        routes: AppRoutes.getAppRoutes(),
+	onGenerateRoute: AppRoutes.onGenerateRoute, // Le manda el argumento en automático
 	);
   }
 }
