@@ -14,22 +14,22 @@ class AppRoutes {
         screen: const HomeScreen()),
     MenuOption(
         route: 'listview1',
-        icon: Icons.home_max_sharp,
+        icon: Icons.list_rounded,
         name: 'List View 1',
         screen: const ListView1Screen()),
     MenuOption(
         route: 'listview2',
-        icon: Icons.home_max_sharp,
+        icon: Icons.list_rounded,
         name: 'List View 2',
         screen: const ListView2Screen()),
     MenuOption(
         route: 'alert',
-        icon: Icons.home_max_sharp,
+        icon: Icons.warning_amber_rounded,
         name: 'Alert',
         screen: const AlertScreen()),
     MenuOption(
         route: 'card',
-        icon: Icons.home_max_sharp,
+        icon: Icons.credit_card_rounded,
         name: 'Tarjetas',
         screen: const CardScreen()),
   ];
@@ -38,8 +38,7 @@ class AppRoutes {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
 
     for (final option in menuOptions) {
-      appRoutes
-          .addAll({option.route: (BuildContext context) => option.screen});
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
     }
 
     return appRoutes;
