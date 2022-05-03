@@ -18,15 +18,22 @@ class CardScreen extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          CustomCardType2(),
+          CustomCardType2(
+              name: 'Paisaje',
+              imageUrl:
+                  'https://mymodernmet.com/wp/wp-content/uploads/2022/02/international-landscape-photographer-awards-20.jpeg'),
           SizedBox(
             height: 10,
           ),
-          CustomCardType2(),
+          CustomCardType2(
+              imageUrl:
+                  'https://image.winudf.com/v2/image/Y29tLkRyZWFtV2FsbHBhcGVycy5GYW50YXN5TGFuZHNjYXBlMDFfc2NyZWVuc2hvdHNfMF8yN2U3YjZlMQ/screen-0.jpg?fakeurl=1&type=.webp'),
           SizedBox(
             height: 10,
           ),
-          CustomCardType2()
+          CustomCardType2(
+              imageUrl:
+                  'https://www.tom-archer.com/wp-content/uploads/2018/06/milford-sound-night-fine-art-photography-new-zealand.jpg')
         ],
       ),
     );
